@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Homework 4 Extra Credit</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function Square() {
+		var numText, num;
+		numText = document.getElementById("numSelect").value;
+		num = parseInt(numText);
+ if ( num < 2 || num > 10 ) {
+	 
+	}	
+	else{	
+
+		var text = "";
+	
+	for(var i = 0; i < num; i++) {
+		text += "* ";
+	   if(i == 0 || i == num -1 ) {
+		for(var y = 1; y < num -1; y++) {
+			text += "* ";
+			
+		}
+	   }
+	   else {
+		for(var y = 1; y < num -1; y++) {
+			text += "  ";
+			
+		}
+
+	  }
+	   
+		text += "*";
+		text += "\n";
+	}
+	document.getElementById("box1").value = text ;
+     }
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="hw4.html">HW4 Home</a>
+  <a href="hw4Part1.html">HW4-Part 1</a>
+  <a href="hw4Part2.html">HW4-Part 2</a>
+  <a href="hw4Extra.html">HW4-Extra Credit</a>
+</div>
+
+
+<br/>
+ 
+<br>
+
+<form>
+<div>
+<input type="text" id="numSelect" size="5">
+<input type="button" onclick="Square()" value="Pick a Number from 2-10 then Click Me">
+
+</div>
+<div>
+<textarea name="box1" id="box1" readonly cols="20" rows="12"></textarea>
+<br>
+<input type="reset" value="RESET">
+</div>
+</form>
+
+
+
+</body>
+</html>

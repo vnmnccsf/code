@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Homework 4 Part 1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="hw4.html">HW4 Home</a>
+  <a href="hw4Part1.html">HW4-Part 1</a>
+  <a href="hw4Part2.html">HW4-Part 2</a>
+  <a href="hw4Extra.html">HW4-Extra Credit</a>
+</div>
+
+<body>
+<br>
+<br>
+
+
+<div name="part1a" id="part1a" class="ui-widget-content">
+<textarea name="part1aResult" id="part1aResult" readonly cols="70" rows="4"></textarea>
+
+</div>
+
+<div name="part1b" id="part1b" class="ui-widget-content">
+<textarea name="part1bResult" id="part1bResult" readonly cols="70" rows="4"></textarea>
+</div>
+
+<script>
+
+	var product = 1;
+	var sum = 0;
+	
+	for(var i = 5; i <=25; i +=4) {
+		product *= i;
+		sum += i;
+	}
+	document.getElementById("part1aResult").value = ("Sum of every fourth integer from 5 to 25 inclusive: " + sum + "\nProduct of every third integer from 5 to 20 inclusive: " + product);  
+
+	var product1 = 1;
+	var sum1 = 0;
+	var num = 3;
+	while( num <=18 ) {
+		product1 *= i;
+		sum1 += i;
+		num += 3;
+	}
+	document.getElementById("part1bResult").value = ("Sum of every third integer from 3 to 18 inclusive: " + sum1 + "\nProduct of every third integer from 3 to 31 inclusive: " + product1);
+</script>
+
+
+
+
+</body>
+</html>

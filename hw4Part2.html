@@ -1,0 +1,81 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+
+  <title>Homework 4 - Part 2</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function compoundInterest(interest) {
+
+	var Year = 1;
+	var Amount = 11;
+	var Iinterest = 21;
+
+	for (var year = 1; year <= 10; year++) {
+	var principal = 1000;
+	var accumulated = 0;
+		
+	accumulated = principal * (Math.pow(1 + interest, year));
+	document.getElementById("table").style.display = "inline";
+	document.getElementById(Year).value = (year);
+	document.getElementById(Amount).value = (accumulated).toFixed(2);
+	document.getElementById(Iinterest).value = (interest);
+	
+	Year++;
+	Amount++;
+	Iinterest++;
+	}
+}
+
+</script>
+</head>
+
+
+<body>
+
+<div class="topnav">
+  <a href="index.html">HOME</a>
+  <a href="hw4.html">HW4 Home</a>
+  <a href="hw4Part1.html">HW4-Part 1</a>
+  <a href="hw4Part2.html">HW4-Part 2</a>
+  <a href="hw4Extra.html">HW4-Extra Credit</a>
+</div>
+
+
+
+<br/>
+<br>
+<br>
+<div class="dropdown">
+  <button class="Select">Select interest rate</button>
+  <div class="dropdown-content">
+  <input type="button"  onclick="compoundInterest(0.05)" value="Interest rate %5">
+  <input type="button"  onclick="compoundInterest(0.06)" value="Interest rate %6">
+  <input type="button"  onclick="compoundInterest(0.07)" value="Interest rate %7">
+  
+  </div>
+</div>
+
+<table style="display:none;" id="table">
+<tr><th>Year</th><th>Amount on deposit</th><th>Interest Rate</th></tr>
+
+<tr><td><input type="text" readonly class="t" id="1" name="yearRow1"></td><td><input type="text" readonly class="t" id="11" name="amount1"></td><td><input type="text" readonly class="t" id="21" name="interest1"></td></tr>
+<tr><td><input type="text" readonly class="t" id="2" name="yearRow2"></td><td><input type="text" readonly class="t" id="12" name="amount2"></td><td><input type="text" readonly class="t" id="22" name="interest2"></td></tr>
+<tr><td><input type="text" readonly class="t" id="3" name="yearRow3"></td><td><input type="text" readonly class="t" id="13" name="amount3"></td><td><input type="text" readonly class="t" id="23" name="interest3"></td></tr>
+<tr><td><input type="text" readonly class="t" id="4" name="yearRow4"></td><td><input type="text" readonly class="t" id="14" name="amount4"></td><td><input type="text" readonly class="t" id="24" name="interest4"></td></tr>
+<tr><td><input type="text" readonly class="t" id="5" name="yearRow5"></td><td><input type="text" readonly class="t" id="15" name="amount5"></td><td><input type="text" readonly class="t" id="25" name="interest5"></td></tr>
+<tr><td><input type="text" readonly class="t" id="6" name="yearRow6"></td><td><input type="text" readonly class="t" id="16" name="amount6"></td><td><input type="text" readonly class="t" id="26" name="interest6"></td></tr>
+<tr><td><input type="text" readonly class="t" id="7" name="yearRow7"></td><td><input type="text" readonly class="t" id="17" name="amount7"></td><td><input type="text" readonly class="t" id="27" name="interest7"></td></tr>
+<tr><td><input type="text" readonly class="t" id="8" name="yearRow8"></td><td><input type="text" readonly class="t" id="18" name="amount8"></td><td><input type="text" readonly class="t" id="28" name="interest8"></td></tr>
+<tr><td><input type="text" readonly class="t" id="9" name="yearRow9"></td><td><input type="text" readonly class="t" id="19" name="amount9"></td><td><input type="text" readonly class="t" id="29" name="interest9"></td></tr>
+<tr><td><input type="text" readonly class="t" id="10" name="yearRow10"></td><td><input type="text" readonly class="t" id="20" name="amount10"></td><td><input type="text" readonly class="t" id="30" name="interest10"></td></tr>
+</table>
+
+
+
+</body>
+</html>
